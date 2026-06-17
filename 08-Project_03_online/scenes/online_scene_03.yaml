@@ -1,0 +1,118 @@
+Task:  ['<>(disturb_b01 && <>(scout_b01 && <> attack_b01))',
+        '<>(disturb_b02 && <>(scout_b02 && <> attack_b02))',
+        '<>(disturb_b03 && <>(scout_b03 && <> attack_b03))',
+        '<>(disturb_b04 && <>(scout_b04 && <> attack_b04))',]
+
+Subtasks:
+  -
+    type: 'scout'
+    dur: 5
+    req:
+        'scout': 5
+  -
+    type: 'attack'
+    dur: 10
+    req: 
+        'attack': 5
+
+  -
+    type: 'disturb'
+    dur: 5
+    req: 
+        'disturb': 3
+
+Actions: ['scout', 'attack', 'disturb', ]
+
+Agents:
+  - 
+    type: 'AUAV'
+    num: 5
+    reg: 'AUAVbase'
+    vel: [20, 0]
+    act: ['attack', 'disturb']
+  - 
+    type: 'SUAV'
+    num: 5
+    reg: 'SUAVbase'
+    vel: [20, 0]
+    act: ['scout',]
+  - 
+    type: 'SAUAV'
+    num: 5
+    reg: 'SAUAVbase'
+    vel: [20, 0]
+    act: ['attack', 'scout', 'disturb']
+  - 
+    type: 'HUAV'
+    reg: 'HUAVbase'
+    num: 5
+    vel: [20, 0]
+    act: ['attack', 'scout', 'disturb']
+
+Regions:
+  -
+    name: 'AUAVbase'
+    type: 'AUAV'
+    pos: [450, 650]
+    range: 60
+    color: 'red'
+  -
+    name: 'SUAVbase'
+    type: 'SUAV'
+    pos: [650, 250]
+    range: 60
+    color: 'red'
+  -
+    name: 'SAUAVbase'
+    type: 'SAUAV'
+    pos: [650, 550]
+    range: 60
+    color: 'red'
+  -
+    name: 'HUAVbase'
+    type: 'HUAV'
+    pos: [550, 450]
+    range: 60
+    color: 'red'
+  -
+    name: 'b01'
+    type: 'b'
+    pos: [150, 350]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b02'
+    type: 'b'
+    pos: [350, 150]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b03'
+    type: 'b'
+    pos: [250, 450]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b04'
+    type: 'b'
+    pos: [250, 250]
+    range: 60
+    color: 'blue'
+
+Broken_agents: [1, 5, 8]
+
+Broken_time: 80
+
+Fluctuated_subtask:
+  - type: 'scout'
+    dur: 7
+    req:
+      'scout': 5
+  - type: 'attack'
+    dur: 14
+    req:
+      'attack': 5
+  - type: 'disturb'
+    dur: 7
+    req:
+      'patrol': 3

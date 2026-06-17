@@ -1,0 +1,55 @@
+{
+    "message": "成功",
+    "code": 200,
+    "result": [
+        {
+            "zbbs": "A1",   
+            "zzwqxhnm": "zzwqxhnm001", 
+            "zdblxnm": "ZDBLXNM001",  
+            "xdsl": 2
+        },
+        {
+            "zbbs": "A2",   
+            "zzwqxhnm": "zzwqxhnm001", 
+            "zdblxnm": "ZDBLXNM001",  
+            "xdsl": 1
+        },
+        {
+            "zbbs": "B1",   
+            "zzwqxhnm": "zzwqxhnm002", 
+            "zdblxnm": "ZDBLXNM002",  
+            "xdsl": 2
+        },
+        {
+            "zbbs": "B2",   
+            "zzwqxhnm": "zzwqxhnm002", 
+            "zdblxnm": "ZDBLXNM002",  
+            "xdsl": 1
+        },
+        {
+            "zbbs": "C1",   
+            "zzwqxhnm": "zzwqxhnm003", 
+            "zdblxnm": "ZDBLXNM003",  
+            "xdsl": 1
+        },
+        {
+            "zbbs": "C2",   
+            "zzwqxhnm": "zzwqxhnm003", 
+            "zdblxnm": "ZDBLXNM003",  
+            "xdsl": 1
+        },
+        {
+            "zbbs": "D1",   
+            "zzwqxhnm": "zzwqxhnm004", 
+            "zdblxnm": "ZDBLXNM004",  
+            "xdsl": 1
+        },
+        {
+            "zbbs": "D2",   
+            "zzwqxhnm": "zzwqxhnm004", 
+            "zdblxnm": "ZDBLXNM004",  
+            "xdsl": 1
+        }
+    ],
+    "timestamp": 1715910355715
+}

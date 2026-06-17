@@ -1,0 +1,8 @@
+digraph {
+	scout_b01 [label=scout_b01 peripheries=1 shape=box]
+	attack_b01 [label=attack_b01 peripheries=1 shape=box]
+	scout_b02 [label=scout_b02 peripheries=1 shape=box]
+	attack_b02 [label=attack_b02 peripheries=1 shape=box]
+	scout_b01 -> attack_b01 [label="<="]
+	scout_b02 -> attack_b02 [label="<="]
+}

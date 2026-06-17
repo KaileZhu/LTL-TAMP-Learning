@@ -1,0 +1,16 @@
+{"result": 
+[{"rwbs": "task001", "ssyabs": "ssyabs001", 
+"ssyamx": 
+[{"mbbs": "mbbs001", "yxj": 1, 
+"dxdl": [{"zzwqxhnm": "zzwqxhnm001", "zdblxnm": "ZDBLXNM001", "dl": 2}, {"zzwqxhnm": "zzwqxhnm002", "zdblxnm": "ZDBLXNM002", "dl": 2}]}, 
+{"mbbs": "mbbs002", "yxj": 1, 
+"dxdl": [{"zzwqxhnm": "zzwqxhnm003", "zdblxnm": "ZDBLXNM003", "dl": 2}]}
+]},
+{"rwbs": "task002", "ssyabs": "ssyabs002", 
+"ssyamx": 
+[{"mbbs": "mbbs003", "yxj": 3, 
+"dxdl": [{"zzwqxhnm": "zzwqxhnm001", "zdblxnm": "ZDBLXNM001", "dl": 1}, {"zzwqxhnm": "zzwqxhnm002", "zdblxnm": "ZDBLXNM002", "dl": 1}]}, 
+{"mbbs": "mbbs004", "yxj": 3, 
+"dxdl": [{"zzwqxhnm": "zzwqxhnm004", "zdblxnm": "ZDBLXNM004", "dl": 1}]}
+]}]
+}

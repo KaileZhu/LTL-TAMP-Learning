@@ -1,0 +1,110 @@
+Task1: '<>(scout_b01 && <>(attack_b01)) &&
+        <>(scout_b02 && <>(attack_b02)) &&
+        <>(scout_b03 && <>(attack_b03)) &&
+        <>(scout_b04 && <>(attack_b04)) &&
+        <>(scout_b05 && <>(attack_b05))
+        '
+
+Task2:
+      '<>(disturb_01 && <>(scout_b01 && <> scout_b01)) &&
+       <>(disturb_02 && <>(scout_b02 && <> scout_b02)) &&
+       <>(disturb_03 && <>(scout_b03 && <> scout_b03)) &&
+       '
+
+Task3:
+      '<>(trick_01 && <>(scout_b01 && <> scout_b01)) &&
+       <>(disturb_02 && <>(scout_b02 && <> scout_b02)) &&
+       <>(disturb_03 && <>(scout_b03 && <> scout_b03)) &&
+       '
+
+Subtasks:
+  -
+    type: 'scout'
+    dur: 5
+    req:
+        scout: 1
+  -
+    type: 'attack'
+    dur: 10
+    req: 
+        attack: 1
+
+Actions: ['scout', 'attack']
+
+Agents:
+  - 
+    type: 'AUAV'
+    num: 5
+    vel: [50, 0]
+    act: ['attack',]
+  - 
+    type: 'SUAV'
+    num: 5
+    vel: [50, 0]
+    act: ['scout',]
+  - 
+    type: 'SAUAV'
+    num: 5
+    vel: [50, 0]
+    act: ['attack', 'scout']
+  - 
+    type: 'UGV'
+    num: 5
+    vel: [10, 0]
+    act: ['attack',]
+
+Regions:
+  -
+    name: 'AUAVbase'
+    type: 'AUAV'
+    pos: [450, 650]
+    range: 60
+    color: 'red'
+  -
+    name: 'SUAVbase'
+    type: 'SUAV'
+    pos: [650, 250]
+    range: 60
+    color: 'red'
+  -
+    name: 'SAUAVbase'
+    type: 'SAUAV'
+    pos: [550, 350]
+    range: 60
+    color: 'red'
+  -
+    name: 'UGVbase'
+    type: 'UGV'
+    pos: [550, 450]
+    range: 60
+    color: 'red'
+  -
+    name: 'b01'
+    type: 'b'
+    pos: [350, 350]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b02'
+    type: 'b'
+    pos: [350, 150]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b03'
+    type: 'b'
+    pos: [250, 450]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b04'
+    type: 'b'
+    pos: [250, 250]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b05'
+    type: 'b'
+    pos: [150, 550]
+    range: 60
+    color: 'blue'

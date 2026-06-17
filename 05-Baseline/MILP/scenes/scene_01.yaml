@@ -1,0 +1,101 @@
+Task: [
+        '<>(scout_b01 && <>(attack_b01))',
+        # '<>(scout_b02 && <>(attack_b02))',
+        # '<>(scout_b03 && <>(attack_b03))',
+      ]
+
+Subtasks:
+  -
+    type: 'scout'
+    dur: 5
+    req:
+        'scout': 2
+  -
+    type: 'attack'
+    dur: 10
+    req: 
+        'attack': 2
+
+Actions: ['scout', 'attack', ]
+
+Agents:
+  - 
+    type: 'AUAV'
+    num: 2
+    reg: 'AUAVbase'
+    vel: [20, 0]
+    act: ['attack',]
+  - 
+    type: 'SUAV'
+    num: 2
+    reg: 'SUAVbase'
+    vel: [20, 0]
+    act: ['scout',]
+  - 
+    type: 'SAUAV'
+    num: 2
+    reg: 'SAUAVbase'
+    vel: [20, 0]
+    act: ['attack', 'scout']
+  - 
+    type: 'HUAV'
+    reg: 'HUAVbase'
+    num: 2
+    vel: [2, 0]
+    act: ['attack', 'scout']
+
+Regions:
+  -
+    name: 'AUAVbase'
+    type: 'AUAV'
+    pos: [450, 650]
+    range: 60
+    color: 'red'
+  -
+    name: 'SUAVbase'
+    type: 'SUAV'
+    pos: [650, 250]
+    range: 60
+    color: 'red'
+  -
+    name: 'SAUAVbase'
+    type: 'SAUAV'
+    pos: [650, 550]
+    range: 60
+    color: 'red'
+  -
+    name: 'HUAVbase'
+    type: 'HUAV'
+    pos: [550, 450]
+    range: 60
+    color: 'red'
+  -
+    name: 'b01'
+    type: 'b'
+    pos: [150, 350]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b02'
+    type: 'b'
+    pos: [350, 150]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b03'
+    type: 'b'
+    pos: [250, 450]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b04'
+    type: 'b'
+    pos: [250, 250]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b05'
+    type: 'b'
+    pos: [150, 550]
+    range: 60
+    color: 'blue'

@@ -1,0 +1,5 @@
+offline time budget: 10
+offline missile assign strategy: "uniform"
+
+online time budget: 10
+online missile assign strategy: "concentrate"

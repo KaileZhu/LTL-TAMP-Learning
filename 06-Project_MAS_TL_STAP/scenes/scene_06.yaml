@@ -1,0 +1,124 @@
+Task:  ['<>(scout_b01 && <>(attack_b01)) && [](scout_b01 -> !attack_b01)',
+        '<>(scout_b02 && <>(patrol_b02)) && [](scout_b02 -> !patrol_b02)',
+        '<>(disturb_b03 && <>(attack_b03)) && [](disturb_b03 -> !attack_b03)',
+        '<>(scout_b04 && <>(attack_b04)) && [](scout_b04 -> !attack_b04)',
+        '<>(disturb_b05 && <>(attack_b05)) && [](disturb_b05 -> !attack_b05)',]
+
+
+Subtasks:
+  -
+    type: 'scout'
+    dur: 10
+    req:
+        'scout': 5
+  -
+    type: 'attack'
+    dur: 15
+    req: 
+        'attack': 5
+  -
+    type: 'patrol'
+    dur: 25
+    req: 
+        'patrol': 2
+  -
+    type: 'disturb'
+    dur: 5
+    req: 
+        'disturb': 3
+
+Actions: ['scout', 'attack', 'patrol', 'disturb']
+
+Agents:
+  - 
+    type: 'AUAV_h'
+    num: 4
+    reg: 'AUAVbase01'
+    vel: [20, 0]
+    act: ['attack', 'disturb']
+  - 
+    type: 'AUAV_l'
+    num: 4
+    reg: 'AUAVbase02'
+    vel: [10, 0]
+    act: ['attack', 'disturb']
+  - 
+    type: 'SUAV_h'
+    num: 4
+    reg: 'SUAVbase01'
+    vel: [20, 0]
+    act: ['scout', 'patrol']
+  - 
+    type: 'SUAV_l'
+    num: 4
+    reg: 'SUAVbase02'
+    vel: [10, 0]
+    act: ['scout', 'patrol']
+  - 
+    type: 'SAUAV'
+    num: 3
+    reg: 'SAUAVbase'
+    vel: [15, 0]
+    act: ['scout', 'attack', 'patrol', 'disturb']
+
+Regions:
+  -
+    name: 'AUAVbase01'
+    type: 'AUAV'
+    pos: [450, 650]
+    range: 60
+    color: 'red'
+  -
+    name: 'SUAVbase01'
+    type: 'SUAV'
+    pos: [650, 250]
+    range: 60
+    color: 'red'
+  -
+    name: 'SAUAVbase'
+    type: 'SAUAV'
+    pos: [650, 550]
+    range: 60
+    color: 'red'
+  -
+    name: 'AUAVbase02'
+    type: 'HUAV'
+    pos: [550, 450]
+    range: 60
+    color: 'red'
+  -
+    name: 'SUAVbase02'
+    type: 'HUAV'
+    pos: [650, 350]
+    range: 60
+    color: 'red'
+  -
+    name: 'b01'
+    type: 'b'
+    pos: [150, 350]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b02'
+    type: 'b'
+    pos: [350, 150]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b03'
+    type: 'b'
+    pos: [250, 450]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b04'
+    type: 'b'
+    pos: [250, 250]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b05'
+    type: 'b'
+    pos: [150, 550]
+    range: 60
+    color: 'blue'

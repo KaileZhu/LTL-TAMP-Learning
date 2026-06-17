@@ -1,0 +1,171 @@
+Task:   ['<>(attack_b06 && <>(attack_b02)) ',
+        '<>(attack_b07 && <>(attack_b03))',
+        '<>(attack_b08 && <>(attack_b05))',
+        '<>(attack_b09 && <>(attack_b04))',
+        '<>(attack_b10 && <>(attack_b01))',
+        '<>(attack_b07 && <>(attack_b05))']
+
+
+Subtasks:
+  -
+    name: 'attack_b01'
+    req: {'A-Missile': 2}
+  -
+    name: 'attack_b02'
+    req: {'B-Missile': 3}
+  -
+    name: 'attack_b03'
+    req: {'A-Missile': 2, 'D-Missile': 3}
+  -
+    name: 'attack_b04'
+    req: {'C-Missile': 3}
+  -
+    name: 'attack_b05'
+    req: {'B-Missile': 2, 'D-Missile': 2}
+  -
+    name: 'attack_b06'
+    req: {'C-Missile': 2, 'D-Missile': 3}
+  -
+    name: 'attack_b07'
+    req: {'D-Missile': 4}
+  -
+    name: 'attack_b08'
+    req: {'A-Missile': 1, 'C-Missile': 2}
+  -
+    name: 'attack_b09'
+    req: {'B-Missile': 3}
+  -
+    name: 'attack_b10'
+    req: {'C-Missile': 4}
+
+
+Agents:
+  - 
+    type: 'A-Missile'
+    id: 1
+    prepare_time: 10
+    missile_num: 1
+    duration_and_tw: {'attack_b01':[10,[75,90]], 'attack_b02':[11,[70,100]], 'attack_b03':[15,[110,130]], 'attack_b08':[8,[20,55]], 'attack_b09':[12,[30,60]]}
+  - 
+    type: 'A-Missile'
+    id: 2
+    prepare_time: 10
+    missile_num: 1
+    duration_and_tw: {'attack_b01':[10,[70,85]], 'attack_b02':[13,[70,100]], 'attack_b03':[13,[110,130]], 'attack_b08':[10,[20,55]], 'attack_b09':[12,[30,60]]}
+  - 
+    type: 'A-Missile'
+    id: 3
+    prepare_time: 10
+    missile_num: 1
+    duration_and_tw: {'attack_b01':[8,[70,90]], 'attack_b02':[11,[70,100]], 'attack_b03':[12,[110,130]], 'attack_b08':[10,[20,55]], 'attack_b09':[10,[30,60]]}
+  - 
+    type: 'A-Missile'
+    id: 4
+    prepare_time: 10
+    missile_num: 1
+    duration_and_tw: {'attack_b01':[12,[80,90]], 'attack_b02':[12,[70,100]], 'attack_b03':[14,[110,130]], 'attack_b08':[12,[20,55]], 'attack_b09':[9,[30,60]]}
+  - 
+    type: 'A-Missile'
+    id: 5
+    prepare_time: 10
+    missile_num: 1
+    duration_and_tw: {'attack_b01':[12,[70,85]], 'attack_b02':[15,[70,100]], 'attack_b03':[10,[110,130]], 'attack_b08':[12,[20,55]], 'attack_b09':[15,[30,60]]}
+
+  - 
+    type: 'B-Missile'
+    id: 1
+    prepare_time: 10
+    missile_num: 2
+    duration_and_tw: {'attack_b02':[12,[60,90]], 'attack_b05':[15,[90,110]], 'attack_b09':[14,[40,80]]}
+  - 
+    type: 'B-Missile'
+    id: 2
+    prepare_time: 10
+    missile_num: 2
+    duration_and_tw: {'attack_b02':[14,[70,100]], 'attack_b05':[15,[90,110]], 'attack_b09':[12,[40,80]]}
+  - 
+    type: 'B-Missile'
+    id: 3
+    prepare_time: 10
+    missile_num: 2
+    duration_and_tw: {'attack_b02':[8,[60,100]], 'attack_b05':[12,[90,110]], 'attack_b09':[12,[40,80]]}
+  - 
+    type: 'B-Missile'
+    id: 4
+    prepare_time: 10
+    missile_num: 2
+    duration_and_tw: {'attack_b02':[13,[60,100]], 'attack_b05':[10,[90,110]], 'attack_b09':[14,[40,80]]}
+  - 
+    type: 'B-Missile'
+    id: 5
+    prepare_time: 10
+    missile_num: 2
+    duration_and_tw: {'attack_b02':[10,[60,100]], 'attack_b05':[8,[90,110]], 'attack_b09':[10,[40,80]]}
+
+  - 
+    type: 'C-Missile'
+    id: 1
+    prepare_time: 10
+    missile_num: 4
+    duration_and_tw: {'attack_b04':[10,[80,110]], 'attack_b06':[12,[30,60]], 'attack_b08':[15,[40,70]], 'attack_b10':[14,[50,90]]}
+  - 
+    type: 'C-Missile'
+    id: 2
+    prepare_time: 10
+    missile_num: 4
+    duration_and_tw: {'attack_b04':[10,[80,110]], 'attack_b06':[15,[30,60]], 'attack_b08':[10,[40,70]], 'attack_b10':[6,[50,90]]}
+  - 
+    type: 'C-Missile'
+    id: 3
+    prepare_time: 10
+    missile_num: 4
+    duration_and_tw: {'attack_b04':[8,[80,110]], 'attack_b06':[15,[30,60]], 'attack_b08':[7,[40,70]], 'attack_b10':[5,[50,90]]}
+  - 
+    type: 'C-Missile'
+    id: 4
+    prepare_time: 10
+    missile_num: 4
+    duration_and_tw: {'attack_b04':[15,[80,110]], 'attack_b06':[15,[30,60]], 'attack_b08':[8,[40,70]], 'attack_b10':[10,[50,90]]}
+  - 
+    type: 'C-Missile'
+    id: 5
+    prepare_time: 10
+    missile_num: 4
+    duration_and_tw: {'attack_b04':[12,[80,110]], 'attack_b06':[10,[30,60]], 'attack_b08':[8,[40,70]], 'attack_b10':[12,[50,90]]}
+
+  - 
+    type: 'D-Missile'
+    id: 1
+    prepare_time: 10
+    missile_num: 5
+    duration_and_tw: {'attack_b03':[10,[100,120]], 'attack_b05':[12,[80,100]], 'attack_b06':[10,[40,70]], 'attack_b07':[12,[60,90]]}
+  - 
+    type: 'D-Missile'
+    id: 2
+    prepare_time: 10
+    missile_num: 5
+    duration_and_tw: {'attack_b03':[15,[100,120]], 'attack_b05':[15,[80,100]], 'attack_b06':[10,[40,70]], 'attack_b07':[15,[60,90]]}
+  - 
+    type: 'D-Missile'
+    id: 3
+    prepare_time: 10
+    missile_num: 5
+    duration_and_tw: {'attack_b03':[12,[100,120]], 'attack_b05':[8,[80,100]], 'attack_b06':[12,[40,70]], 'attack_b07':[8,[60,90]]}
+  - 
+    type: 'D-Missile'
+    id: 4
+    prepare_time: 10
+    missile_num: 5
+    duration_and_tw: {'attack_b03':[12,[100,120]], 'attack_b05':[14,[80,100]], 'attack_b06':[9,[40,70]], 'attack_b07':[13,[60,90]]}
+  - 
+    type: 'D-Missile'
+    id: 5
+    prepare_time: 10
+    missile_num: 5
+    duration_and_tw: {'attack_b03':[12,[100,120]], 'attack_b05':[10,[80,100]], 'attack_b06':[13,[40,70]], 'attack_b07':[10,[60,90]]}
+
+
+Broken_agents: [12, 16]
+
+Broken_time: 60
+

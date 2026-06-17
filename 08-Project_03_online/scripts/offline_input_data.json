@@ -1,0 +1,255 @@
+{
+    "ssl_list":
+    [
+        {
+            "rwbs": "task001",  
+            "mbbs": "mbbs-001", 
+            "hlptbs": "A1", 
+            "XDSL": 2, 
+            "mzzzsj": "2024-04-29 18:00:20", 
+            "mzzwsj": "2024-04-29 18:00:35", 
+            "djbhsj": 10,
+            "sslbs": "fscbs007-ssl1",  
+            "sslmc": "fscnm007-ssl0",
+            "zcptbs": "fscbs001",
+            "zckssj": "2024-04-29 17:55:03",
+            "zcjssj": "2024-04-29 17:55:03",
+            "zhptbs": "fscbs001"
+        },
+        {
+            "rwbs": "task001",  
+            "mbbs": "mbbs-001", 
+            "hlptbs": "A2", 
+            "XDSL": 1, 
+            "mzzzsj": "2024-04-29 18:00:25", 
+            "mzzwsj": "2024-04-29 18:00:35", 
+            "djbhsj": 10,
+            "sslbs": "fscbs007-ssl2",  
+            "sslmc": "fscnm007-ssl0",
+            "zcptbs": "fscbs001",
+            "zckssj": "2024-04-29 17:55:03",
+            "zcjssj": "2024-04-29 17:55:03",
+            "zhptbs": "fscbs001"
+        },
+        {
+            "rwbs": "task001",  
+            "mbbs": "mbbs-001", 
+            "hlptbs": "B1", 
+            "XDSL": 2, 
+            "mzzzsj": "2024-04-29 18:00:25", 
+            "mzzwsj": "2024-04-29 18:00:30", 
+            "djbhsj": 5,
+            "sslbs": "fscbs007-ssl3",  
+            "sslmc": "fscnm007-ssl0",
+            "zcptbs": "fscbs001",
+            "zckssj": "2024-04-29 17:55:03",
+            "zcjssj": "2024-04-29 17:55:03",
+            "zhptbs": "fscbs001"
+        },
+        {
+            "rwbs": "task001",  
+            "mbbs": "mbbs-001", 
+            "hlptbs": "B2", 
+            "XDSL": 1, 
+            "mzzzsj": "2024-04-29 18:00:20", 
+            "mzzwsj": "2024-04-29 18:00:35", 
+            "djbhsj": 5,
+            "sslbs": "fscbs007-ssl4",  
+            "sslmc": "fscnm007-ssl0",
+            "zcptbs": "fscbs001",
+            "zckssj": "2024-04-29 17:55:03",
+            "zcjssj": "2024-04-29 17:55:03",
+            "zhptbs": "fscbs001"
+        },
+        {
+            "rwbs": "task001",  
+            "mbbs": "mbbs002", 
+            "hlptbs": "C1", 
+            "XDSL": 1, 
+            "mzzzsj": "2024-04-29 18:00:30", 
+            "mzzwsj": "2024-04-29 18:00:40", 
+            "djbhsj": 15,
+            "sslbs": "fscbs007-ssl5",  
+            "sslmc": "fscnm007-ssl0",
+            "zcptbs": "fscbs001",
+            "zckssj": "2024-04-29 17:55:03",
+            "zcjssj": "2024-04-29 17:55:03",
+            "zhptbs": "fscbs001"
+        },
+        {
+            "rwbs": "task001",  
+            "mbbs": "mbbs002", 
+            "hlptbs": "C2", 
+            "XDSL": 1, 
+            "mzzzsj": "2024-04-29 18:00:35", 
+            "mzzwsj": "2024-04-29 18:00:45", 
+            "djbhsj": 10,
+            "sslbs": "fscbs007-ssl6",  
+            "sslmc": "fscnm007-ssl0",
+            "zcptbs": "fscbs001",
+            "zckssj": "2024-04-29 17:55:03",
+            "zcjssj": "2024-04-29 17:55:03",
+            "zhptbs": "fscbs001"
+        },
+        {
+            "rwbs": "task002",  
+            "mbbs": "mbbs003", 
+            "hlptbs": "A1", 
+            "XDSL": 2, 
+            "mzzzsj": "2024-04-29 18:00:40", 
+            "mzzwsj": "2024-04-29 18:00:50", 
+            "djbhsj": 8,
+            "sslbs": "fscbs007-ssl7",  
+            "sslmc": "fscnm007-ssl0",
+            "zcptbs": "fscbs001",
+            "zckssj": "2024-04-29 17:55:03",
+            "zcjssj": "2024-04-29 17:55:03",
+            "zhptbs": "fscbs001"
+        },
+        {
+            "rwbs": "task002",  
+            "mbbs": "mbbs003", 
+            "hlptbs": "A2", 
+            "XDSL": 1, 
+            "mzzzsj": "2024-04-29 18:00:35", 
+            "mzzwsj": "2024-04-29 18:00:50", 
+            "djbhsj": 10,
+            "sslbs": "fscbs007-ssl8",  
+            "sslmc": "fscnm007-ssl0",
+            "zcptbs": "fscbs001",
+            "zckssj": "2024-04-29 17:55:03",
+            "zcjssj": "2024-04-29 17:55:03",
+            "zhptbs": "fscbs001"
+        },
+        {
+            "rwbs": "task002",  
+            "mbbs": "mbbs003", 
+            "hlptbs": "B1", 
+            "XDSL": 2, 
+            "mzzzsj": "2024-04-29 18:00:45", 
+            "mzzwsj": "2024-04-29 18:00:55", 
+            "djbhsj": 7,
+            "sslbs": "fscbs007-ssl9",  
+            "sslmc": "fscnm007-ssl0",
+            "zcptbs": "fscbs001",
+            "zckssj": "2024-04-29 17:55:03",
+            "zcjssj": "2024-04-29 17:55:03",
+            "zhptbs": "fscbs001"
+        },
+        {
+            "rwbs": "task002",  
+            "mbbs": "mbbs003", 
+            "hlptbs": "B2", 
+            "XDSL": 1, 
+            "mzzzsj": "2024-04-29 18:00:40", 
+            "mzzwsj": "2024-04-29 18:00:50", 
+            "djbhsj": 5,
+            "sslbs": "fscbs007-ssl10",  
+            "sslmc": "fscnm007-ssl0",
+            "zcptbs": "fscbs001",
+            "zckssj": "2024-04-29 17:55:03",
+            "zcjssj": "2024-04-29 17:55:03",
+            "zhptbs": "fscbs001"
+        },
+        {
+            "rwbs": "task002",  
+            "mbbs": "mbbs004", 
+            "hlptbs": "D1", 
+            "XDSL": 1, 
+            "mzzzsj": "2024-04-29 18:00:42", 
+            "mzzwsj": "2024-04-29 18:00:50", 
+            "djbhsj": 15,
+            "sslbs": "fscbs007-ssl11",  
+            "sslmc": "fscnm007-ssl0",
+            "zcptbs": "fscbs001",
+            "zckssj": "2024-04-29 17:55:03",
+            "zcjssj": "2024-04-29 17:55:03",
+            "zhptbs": "fscbs001"
+        },
+        {
+            "rwbs": "task002",
+            "mbbs": "mbbs004", 
+            "hlptbs": "D2", 
+            "XDSL": 1, 
+            "mzzzsj": "2024-04-29 18:00:45", 
+            "mzzwsj": "2024-04-29 18:00:55", 
+            "djbhsj": 10,
+            "sslbs": "fscbs007-ssl12",  
+            "sslmc": "fscnm007-ssl0",
+            "zcptbs": "fscbs001",
+            "zckssj": "2024-04-29 17:55:03",
+            "zcjssj": "2024-04-29 17:55:03",
+            "zhptbs": "fscbs001"
+        }
+    ],
+
+    "dlgh":
+    [{"rwbs": "task001", "ssyabs": "ssyabs001", 
+    "ssyamx": 
+    [{"mbbs": "mbbs-001", "yxj": 1, 
+    "dxdl": [{"zzwqxhnm": "zzwqxhnm001", "zdblxnm": "ZDBLXNM001", "dl": 2}, {"zzwqxhnm": "zzwqxhnm002", "zdblxnm": "ZDBLXNM002", "dl": 2}]}, 
+    {"mbbs": "mbbs002", "yxj": 1, 
+    "dxdl": [{"zzwqxhnm": "zzwqxhnm003", "zdblxnm": "ZDBLXNM003", "dl": 2}]}
+    ]},
+    {"rwbs": "task002", "ssyabs": "ssyabs002", 
+    "ssyamx": 
+    [{"mbbs": "mbbs003", "yxj": 1, 
+    "dxdl": [{"zzwqxhnm": "zzwqxhnm001", "zdblxnm": "ZDBLXNM001", "dl": 1}, {"zzwqxhnm": "zzwqxhnm002", "zdblxnm": "ZDBLXNM002", "dl": 1}]}, 
+    {"mbbs": "mbbs004", "yxj": 1, 
+    "dxdl": [{"zzwqxhnm": "zzwqxhnm004", "zdblxnm": "ZDBLXNM004", "dl": 7}]}
+    ]}],
+
+    "weapons":
+    [
+        {
+            "zbbs": "A1",   
+            "zzwqxhnm": "zzwqxhnm001", 
+            "zdblxnm": "ZDBLXNM001",  
+            "xdsl": 2
+        },
+        {
+            "zbbs": "A2",   
+            "zzwqxhnm": "zzwqxhnm001", 
+            "zdblxnm": "ZDBLXNM001",  
+            "xdsl": 1
+        },
+        {
+            "zbbs": "B1",   
+            "zzwqxhnm": "zzwqxhnm002", 
+            "zdblxnm": "ZDBLXNM002",  
+            "xdsl": 2
+        },
+        {
+            "zbbs": "B2",   
+            "zzwqxhnm": "zzwqxhnm002", 
+            "zdblxnm": "ZDBLXNM002",  
+            "xdsl": 1
+        },
+        {
+            "zbbs": "C1",   
+            "zzwqxhnm": "zzwqxhnm003", 
+            "zdblxnm": "ZDBLXNM003",  
+            "xdsl": 1
+        },
+        {
+            "zbbs": "C2",   
+            "zzwqxhnm": "zzwqxhnm003", 
+            "zdblxnm": "ZDBLXNM003",  
+            "xdsl": 1
+        },
+        {
+            "zbbs": "D1",   
+            "zzwqxhnm": "zzwqxhnm004", 
+            "zdblxnm": "ZDBLXNM004",  
+            "xdsl": 2
+        },
+        {
+            "zbbs": "D2",   
+            "zzwqxhnm": "zzwqxhnm004", 
+            "zdblxnm": "ZDBLXNM004",  
+            "xdsl": 6
+        }
+    ]
+
+    
+}

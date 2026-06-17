@@ -1,0 +1,128 @@
+Task:   ['<>(scout_b01 && <>(attack_b02)) ',
+        '<>(scout_b02 && <>(attack_b03))',
+        '<>(scout_b04 && <>(attack_b05))',
+        '<>(scout_b05 && <>(attack_b04))',
+        '<>(scout_b02 && <>(attack_b01))',
+        '<>(scout_b01 && <>(attack_b05))']
+
+TW:
+  scout_b01: [60, 1000]
+  scout_b02: [50, 1000]
+  scout_b04: [40, 1000]
+  scout_b05: [80, 1000]
+  attack_b01: [0, 1000]
+  attack_b02: [45, 1000]
+  attack_b03: [0, 1000]
+  attack_b04: [0, 1000]
+  attack_b05: [60, 1000]
+
+
+Subtasks:
+  -
+    type: 'scout'
+    dur: 5
+    req:
+        scout: 50
+  -
+    type: 'attack'
+    dur: 10
+    req: 
+        attack: 30
+
+Actions: ['scout', 'attack', ]
+
+Agents:
+  - 
+    type: 'AUAV'
+    num: 5
+    reg: 'AUAVbase'
+    vel: [20, 0]
+    act: {'attack': 10}
+  - 
+    type: 'SUAV'
+    num: 5
+    reg: 'SUAVbase'
+    vel: [20, 0]
+    act: {'scout': 10}
+  - 
+    type: 'SAUAV'
+    num: 5
+    reg: 'SAUAVbase'
+    vel: [20, 0]
+    act: {'attack': 10, 'scout': 10}
+  - 
+    type: 'UGV'
+    reg: 'UGVbase'
+    num: 5
+    vel: [2, 0]
+    act: {'attack': 10}
+
+Regions:
+  -
+    name: 'AUAVbase'
+    type: 'AUAV'
+    pos: [450, 650]
+    range: 60
+    color: 'red'
+  -
+    name: 'SUAVbase'
+    type: 'SUAV'
+    pos: [650, 250]
+    range: 60
+    color: 'red'
+  -
+    name: 'SAUAVbase'
+    type: 'SAUAV'
+    pos: [650, 550]
+    range: 60
+    color: 'red'
+  -
+    name: 'UGVbase'
+    type: 'UGV'
+    pos: [550, 450]
+    range: 60
+    color: 'red'
+  -
+    name: 'b01'
+    type: 'b'
+    pos: [150, 350]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b02'
+    type: 'b'
+    pos: [350, 150]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b03'
+    type: 'b'
+    pos: [250, 450]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b04'
+    type: 'b'
+    pos: [250, 250]
+    range: 60
+    color: 'blue'
+  -
+    name: 'b05'
+    type: 'b'
+    pos: [150, 550]
+    range: 60
+    color: 'blue'
+
+Broken_agents: [3, 4]
+
+Broken_time: 80
+
+Fluctuated_subtask:
+  - type: 'scout'
+    dur: 6.5
+    req:
+      'scout': 40
+  - type: 'attack'
+    dur: 13
+    req:
+      'attack': 60

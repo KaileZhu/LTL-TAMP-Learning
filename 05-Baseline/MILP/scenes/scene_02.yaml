@@ -1,0 +1,96 @@
+# Task: [
+#       '<>(snap_r1 && <>(sweep_r1)) && 
+#        <>(snap_r2 && <>(sweep_r2)) && 
+#        <>(snap_r3 && <>(sweep_r3)) &&
+#        <>(snap_r4 && <>(sweep_r4))'
+#       ]
+
+Task: [
+      '<>(snap_r1 && <>(sweep_r1)) && 
+       <>(pickup_a1 && <>(drop_a1))'
+      ]
+
+Protocols: [
+
+      ]
+
+Subtasks:
+  -
+    type: 'snap'
+    dur: 6
+    req:
+        'snap': 1  # 1 agent required
+
+  -
+    type: 'sweep'
+    dur: 5
+    req:
+        'sweep': 2  # 1 agent required
+
+  -
+    type: 'pickup'
+    dur: 5
+    req:
+        'snap': 1  # 1 agent required
+  
+  -
+    type: 'drop'
+    dur: 5
+    req:
+        'snap': 1  # 1 agent required
+
+
+Actions: ['snap', 'sweep', 'pickup', 'drop', ]
+
+
+Agents:
+  -
+    type: 'robot'
+    num: 4
+    reg: 'robotbase'
+    vel: [20, 0]
+    act: ['snap', 'sweep', 'pickup', 'drop']
+
+
+Regions:
+  -
+    name: 'robotbase'
+    type: 'robot'
+    pos: [450, 650]
+    range: 60
+    color: 'red'
+
+  -
+    name: 'r1'
+    type: 'room'
+    pos: [45, 65]
+    range: 60
+    color: 'red'
+
+  -
+    name: 'r2'
+    type: 'room'
+    pos: [500, 60]
+    range: 60
+    color: 'red'
+
+  -
+    name: 'r3'
+    type: 'room'
+    pos: [40, 650]
+    range: 60
+    color: 'red'
+
+  -
+    name: 'r4'
+    type: 'room'
+    pos: [400, 50]
+    range: 60
+    color: 'red'
+
+  -
+    name: 'a1'
+    type: 'item'
+    pos: [400, 400]
+    range: 5
+    color: 'blue'
