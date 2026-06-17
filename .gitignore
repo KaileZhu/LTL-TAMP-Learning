@@ -27,12 +27,12 @@ env/
 .DS_Store
 Thumbs.db
 desktop.ini
+__MACOSX/
 
-# Large binary files (use Git LFS or keep locally)
-*.mp4
-*.MP4
-*.pptx
-*.docx
+# Office temp files
+~$*
+
+# Archives (keep locally)
 *.rar
 *.zip
 
